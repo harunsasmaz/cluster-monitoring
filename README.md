@@ -31,7 +31,7 @@ Our toy service retrieves information about deployments running in the cluster.
 
 #### Expose information on all pods in the cluster
 
-Add an endpoint to the service that exposes all pods running in the cluster in a given namespace:
+An endpoint to the service that exposes all pods running in the cluster in a given namespace:
 
 ```
 GET `/services/{namespace}`
@@ -52,7 +52,7 @@ GET `/services/{namespace}`
 
 #### Expose information on a group of applications in the cluster
 
-Create an endpoint in your service that exposes the pods in the cluster in a given namespace that are part of the same `applicationGroup`:
+An endpoint in our service that exposes the pods in the cluster in a given namespace that are part of the same `applicationGroup`:
 
 ```
 GET `/services/{namespace}/{applicationGroup}`
