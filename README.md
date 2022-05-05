@@ -1,10 +1,14 @@
-# Cluster Monitoring
+<div align="center">
+<h1> Cluster Monitoring </h1>
+  
+A playground to learn how to use Knative on Kubernetes clusters. 
+
 
 ![build](https://github.com/harunsasmaz/cluster-monitoring/actions/workflows/build.yaml/badge.svg)
 ![lint](https://github.com/harunsasmaz/cluster-monitoring/actions/workflows/lint.yaml/badge.svg)
 ---
-
-A playground to learn how to use Knative on Kubernetes clusters. 
+  
+</div>
 
 Our toy service retrieves information about deployments running in the cluster.
 
