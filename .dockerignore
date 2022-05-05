@@ -1,0 +1,9 @@
+.git
+.cache
+.vscode
+.DS_Store
+.idea
+*.md
+*.txt
+*.log
+*.lock

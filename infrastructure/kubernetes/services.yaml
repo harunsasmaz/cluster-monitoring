@@ -1,0 +1,121 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blissful-goodall-deployment
+  labels:
+    service: blissful-goodall
+    applicationGroup: beta
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: blissful-goodall
+  template:
+    metadata:
+      labels:
+        service: blissful-goodall
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.15.8
+        ports:
+        - containerPort: 80
+...
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stoic-sammet-deployment
+  labels:
+    service: stoic-sammet
+    applicationGroup: alpha
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      service: stoic-sammet
+  template:
+    metadata:
+      labels:
+        service: stoic-sammet
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.15.8
+        ports:
+        - containerPort: 80
+...
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quirky-raman-deployment
+  labels:
+    service: quirky-raman
+    applicationGroup: gamma
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: quirky-raman
+  template:
+    metadata:
+      labels:
+        service: quirky-raman
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.15.8
+        ports:
+        - containerPort: 80
+...
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: confident-cartwright-deployment
+  labels:
+    service: confident-cartwright
+    applicationGroup: beta
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: confident-cartwright
+  template:
+    metadata:
+      labels:
+        service: confident-cartwright
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
+...
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: happy-colden-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: happy-colden
+  template:
+    metadata:
+      labels:
+        service: happy-colden
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.15.8
+        ports:
+        - containerPort: 80
+...
