@@ -1,5 +1,32 @@
 # Cluster Monitoring
 
+A playground to learn how to use Knative on Kubernetes clusters. 
+
+Our toy service retrieves information about deployments running in the cluster.
+
+#### Learning Outcomes
+
+- Using Kubernetes Go SDK
+- Creating a cluster with Terraform
+- Installing Knative & Istio to cluster
+- Using custom domains to publish a service
+- Providing secure connection with HTTPS
+
+### Tools
+
+- `gcloud`: Google Cloud Platform CLI
+  - `brew install --cask google-cloud-sdk`
+- `kubectl`: Kubernetes CLI
+  - `brew install kubectl`
+- `kn`: Knative CLI
+  - `brew install kn`
+- `Go 1.17`
+  - `brew install go@1.17`
+- `Docker`
+  - `brew install docker`
+- `terraform`: Terraform CLI
+  - `brew install hashicorp/tap/terraform`
+
 ## Service Endpoints
 
 #### Expose information on all pods in the cluster
@@ -446,4 +473,11 @@ $ curl -vX GET https://api-service.default.harunsasmaz.com/services/default/beta
 }
 ```
 
+## Reference
 
+* [Knative Requirements](https://knative.dev/docs/install/yaml-install/serving/install-serving-with-yaml/#prerequisites)
+* [Install Knative](https://knative.dev/docs/install/yaml-install/serving/install-serving-with-yaml/#install-the-knative-serving-component)
+* [Install Istio](https://knative.dev/docs/install/yaml-install/serving/install-serving-with-yaml/#install-a-networking-layer)
+* [Install Cert-Manager](https://cert-manager.io/docs/installation/kubectl/)
+* [Knative Custom Domain](https://knative.dev/docs/serving/using-a-custom-domain/)
+* [Knative Auto-TLS](https://knative.dev/docs/serving/using-auto-tls/)
