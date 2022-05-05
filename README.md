@@ -1,7 +1,7 @@
 # Cluster Monitoring
 
 ![build](https://github.com/harunsasmaz/cluster-monitoring/actions/workflows/build.yaml/badge.svg)
-![lint](https://github.com/harunsasmaz/cluster-monitoring/actions/workflows/gocilint.yaml/badge.svg)
+![lint](https://github.com/harunsasmaz/cluster-monitoring/actions/workflows/lint.yaml/badge.svg)
 ---
 
 A playground to learn how to use Knative on Kubernetes clusters. 
